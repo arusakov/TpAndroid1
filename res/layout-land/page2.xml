@@ -4,10 +4,31 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            />
+    <LinearLayout style="@style/LayRow">
+        <TextView android:text="3/4\n#990000" style="@style/RectWithText" android:layout_weight="3"
+                  android:background="#990000"/>
+        <TextView android:text="1/4\n#9966CC" style="@style/RectWithText" android:layout_weight="1"
+                  android:background="#9966CC"/>
+
+    </LinearLayout>
+    <LinearLayout style="@style/LayRow">
+
+
+        <TextView android:text="2/5\n#339999" style="@style/RectWithText" android:layout_weight="2"
+                  android:background="#339999"/>
+        <TextView android:text="1/5\n#9999FF" style="@style/RectWithText" android:layout_weight="1"
+                  android:background="#9999FF"/>
+        <TextView android:text="2/5\n#99CC99" style="@style/RectWithText" android:layout_weight="2"
+                  android:background="#99CC99"/>
+
+    </LinearLayout>
+    <LinearLayout style="@style/LayRow">
+        <TextView android:text="1/7\n#336633" style="@style/RectWithText" android:layout_weight="1"
+                  android:background="#336633"/>
+        <TextView android:text="4/7\n#FF9933" style="@style/RectWithText" android:layout_weight="4"
+                  android:background="#FF9933"/>
+        <TextView android:text="2/7\n#FFCC99" style="@style/RectWithText" android:layout_weight="2"
+                  android:background="#FFCC99"/>
+    </LinearLayout>
 </LinearLayout>
 
