@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <style name="RectWithText">
+            <item name="android:gravity">center</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:layout_width">0dip</item>
+            <item name="android:textColor">#fff</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">14dip</item>
+        </style>
+    <style name="LayRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+</resources>
