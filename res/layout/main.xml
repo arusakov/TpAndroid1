@@ -1,13 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="@android:color/white"
         >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
+    <ImageView android:id="@+id/my_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+               android:src="@drawable/ic_launcher"/>
+
+    <Button android:id="@+id/my_brn1"
+            android:layout_toRightOf="@id/my_icon"
+            android:layout_alignTop="@id/my_icon"
+            android:layout_width="match_parent"
+            android:text="Button1"
+            android:layout_height="wrap_content" />
+    <Button android:id="@+id/my_brn2"
+            android:layout_toRightOf="@id/my_icon"
+            android:layout_below="@id/my_brn1"
+            android:layout_width="match_parent"
+            android:text="Button2"
+            android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/my_text1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/my_brn2"
+              android:textSize="11dip"
+              android:textColor="#333"
+              android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             />
-</LinearLayout>
+
+    <Button android:id="@+id/my_dialogbtn"
+            android:layout_below="@id/my_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <LinearLayout android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+        <ImageButton
+                android:id="@+id/leftBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher"
+                android:background="@android:color/white"
+                />
+
+        <ImageButton
+                android:id="@+id/middleBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher"
+                android:background="@android:color/white"
+                />
+
+        <ImageButton
+                android:id="@+id/rightBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher"
+                android:background="@android:color/white"
+                />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
 
