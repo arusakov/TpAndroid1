@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dip"
+                android:background="@android:color/white">
+    <CheckBox android:id="@+id/page3checkbox"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentStart="true"
+              />
+    <TextView   android:id="@+id/page3cbtext"
+            android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="@string/page3_dialog_text"
+              android:textColor="@android:color/black"
+              android:layout_toRightOf="@id/page3checkbox"
+              android:layout_alignBaseline="@id/page3checkbox"
+              android:paddingBottom="15dip"
+            />
+    <Button android:id="@+id/page3BtnOk"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/page3cbtext"
+            android:text="Ok"
+            />
+    <Button android:id="@+id/page3BtnCancel"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/page3BtnOk"
+            android:text="Cancel"/>
+</RelativeLayout>
