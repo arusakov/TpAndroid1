@@ -10,7 +10,7 @@
     <EditText android:id="@+id/dlgText"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="enter text..."
+            android:hint="enter text..."
             android:textColor="@android:color/black"/>
     <Button android:id="@+id/dlgBtnOk"
             android:layout_height="wrap_content"

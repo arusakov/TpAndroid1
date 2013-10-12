@@ -18,7 +18,7 @@ public class MainDialogListener implements View.OnClickListener {
 
 	@Override
 	public void onClick (View v) {
-		if (v.getId() == R.id.dlgBtnOk) {
+		if (v.getId() == R.id.dlgBtnOk && source.getText().length() != 0) {
 			dest.setText(source.getText().toString());
 		}
 		dialog.dismiss();
