@@ -7,8 +7,8 @@ import technopark.TpAndroidOne.R;
 
 public class MainDialogListener implements View.OnClickListener {
 
-	Dialog dialog;
-	EditText source, dest;
+	private Dialog dialog;
+	private EditText source, dest;
 
 	public MainDialogListener(Dialog d, EditText s, EditText dst) {
 		dialog = d;

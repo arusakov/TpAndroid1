@@ -15,15 +15,17 @@ import technopark.TpAndroidOne.mainpage.MainDialogListener;
 
 public class ActivityPage3 extends Activity implements View.OnClickListener {
 
-	Button btnDlg;
-	static boolean showDlg = true;
-	Dialog dialog;
-	CheckBox box;
+	private Button btnDlg;
+	private boolean showDlg;
+	private Dialog dialog;
+	private CheckBox box;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.page3);
+
+		showDlg = true;
 
 		btnDlg = (Button)findViewById(R.id.page3dialogbtn);
 		btnDlg.setOnClickListener(this);

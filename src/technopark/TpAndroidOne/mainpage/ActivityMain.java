@@ -12,10 +12,10 @@ import technopark.TpAndroidOne.R;
 
 public class ActivityMain extends Activity implements View.OnClickListener {
 
-	Button btn1, btn2, btnDlg;
-	ImageButton btnLeft, btnCenter, btnRight;
-	EditText editText;
-	MainPageRouter pageRouter;
+	private Button btn1, btn2, btnDlg;
+	private ImageButton btnLeft, btnCenter, btnRight;
+	private EditText editText;
+	private MainPageRouter pageRouter;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,10 @@ public class ActivityMain extends Activity implements View.OnClickListener {
 		btnLeft.setOnClickListener(pageRouter);
 		btnCenter.setOnClickListener(pageRouter);
 		btnRight.setOnClickListener(pageRouter);
+	}
+
+	public String getText() {
+		return editText.getText().toString();
 	}
 
 	@Override

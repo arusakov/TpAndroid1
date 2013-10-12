@@ -10,9 +10,9 @@ import technopark.TpAndroidOne.R;
 
 public class MainPageRouter implements View.OnClickListener {
 
-	Activity activity;
+	private ActivityMain activity;
 
-	public MainPageRouter(Activity a) {
+	public MainPageRouter(ActivityMain a) {
 		activity = a;
 	}
 
@@ -24,6 +24,8 @@ public class MainPageRouter implements View.OnClickListener {
 		switch (id) {
 			case R.id.mainLeftBtn:
 				intent.setClass(activity, ActivityPage1.class);
+				char s[] = activity.getText().toCharArray();
+				intent.putExtra(activity.getResources().getString(R.string.ROUTE_TEXT), s);
 				break;
 			case R.id.mainCenterBtn:
 				intent.setClass(activity, ActivityPage2.class);
