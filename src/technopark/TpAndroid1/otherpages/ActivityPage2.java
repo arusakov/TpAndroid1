@@ -1,10 +1,8 @@
-package technopark.TpAndroidOne.otherpages;
+package technopark.TpAndroid1.otherpages;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
-import technopark.TpAndroidOne.R;
+import technopark.TpAndroid1.R;
 
 public class ActivityPage2 extends Activity {
 

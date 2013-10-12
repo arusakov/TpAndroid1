@@ -1,4 +1,4 @@
-package technopark.TpAndroidOne.mainpage;
+package technopark.TpAndroid1.mainpage;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import technopark.TpAndroidOne.R;
+import technopark.TpAndroid1.R;
 
 public class ActivityMain extends Activity implements View.OnClickListener {
 

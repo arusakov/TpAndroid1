@@ -1,17 +1,12 @@
-package technopark.TpAndroidOne.otherpages;
+package technopark.TpAndroid1.otherpages;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.Toast;
-import technopark.TpAndroidOne.R;
-import technopark.TpAndroidOne.mainpage.MainDialogListener;
+import technopark.TpAndroid1.R;
 
 public class ActivityPage3 extends Activity implements View.OnClickListener {
 

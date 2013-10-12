@@ -1,12 +1,11 @@
-package technopark.TpAndroidOne.mainpage;
+package technopark.TpAndroid1.mainpage;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
-import technopark.TpAndroidOne.otherpages.ActivityPage1;
-import technopark.TpAndroidOne.otherpages.ActivityPage2;
-import technopark.TpAndroidOne.otherpages.ActivityPage3;
-import technopark.TpAndroidOne.R;
+import technopark.TpAndroid1.otherpages.ActivityPage1;
+import technopark.TpAndroid1.otherpages.ActivityPage2;
+import technopark.TpAndroid1.otherpages.ActivityPage3;
+import technopark.TpAndroid1.R;
 
 public class MainPageRouter implements View.OnClickListener {
 

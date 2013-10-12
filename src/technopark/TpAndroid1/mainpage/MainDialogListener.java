@@ -1,9 +1,9 @@
-package technopark.TpAndroidOne.mainpage;
+package technopark.TpAndroid1.mainpage;
 
 import android.app.Dialog;
 import android.view.View;
 import android.widget.EditText;
-import technopark.TpAndroidOne.R;
+import technopark.TpAndroid1.R;
 
 public class MainDialogListener implements View.OnClickListener {
 
