@@ -17,9 +17,11 @@ public class ActivityPage1 extends Activity {
 
 		Bundle extras = getIntent().getExtras();
 		char str[] = extras.getCharArray(getResources().getString(R.string.ROUTE_TEXT));
-		if (str.length != 0) {
-			text1.setText(str, 0, str.length);
-			text2.setText(str, 0, str.length);
+		if (str.length == 0) {
+			str = getResources().getString(R.string.NOT_TEXT).toCharArray();
 		}
+
+		text1.setText(str, 0, str.length);
+		text2.setText(str, 0, str.length);
 	}
 }

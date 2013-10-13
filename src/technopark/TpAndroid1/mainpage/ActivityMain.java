@@ -67,12 +67,8 @@ public class ActivityMain extends Activity implements View.OnClickListener {
 		dialog.setTitle(R.string.main_dialog_title);
 		dialog.setContentView(R.layout.main_dialog);
 
-		EditText dlgText = (EditText) dialog.findViewById(R.id.dlgText);
-		MainDialogListener dialogListener = new MainDialogListener(dialog, dlgText, editText);
-
-		dialog.findViewById(R.id.dlgBtnOk).setOnClickListener(dialogListener);
-		dialog.findViewById(R.id.dlgBtnCancel).setOnClickListener(dialogListener);
-
+		dialog.setOwnerActivity(this);
+		new MainDialogListener(dialog, editText);
 		dialog.show();
 	}
 }

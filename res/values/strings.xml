@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TpAndroidOne</string>
+    <string name="app_name">TpAndroid1</string>
     <string name="main_btn_press">Нажата кнопка</string>
     <string name="main_dialog_title">Dialog</string>
     <string name="page3_dialog_text">Больше не показывать это окно</string>
 
+    <string name="NOT_TEXT">Нет текста...</string>
 
     <string name="ROUTE_TEXT">ROUTE_TEXT</string>
 </resources>

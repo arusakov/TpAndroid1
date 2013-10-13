@@ -8,18 +8,25 @@ import technopark.TpAndroid1.R;
 public class MainDialogListener implements View.OnClickListener {
 
 	private Dialog dialog;
-	private EditText source, dest;
+	private EditText dest;
 
-	public MainDialogListener(Dialog d, EditText s, EditText dst) {
+	public MainDialogListener(Dialog d, EditText dst) {
 		dialog = d;
-		source = s;
 		dest =  dst;
+
+		dialog.findViewById(R.id.dlgBtnOk).setOnClickListener(this);
+		dialog.findViewById(R.id.dlgBtnCancel).setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick (View v) {
-		if (v.getId() == R.id.dlgBtnOk && source.getText().length() != 0) {
-			dest.setText(source.getText().toString());
+		if (v.getId() == R.id.dlgBtnOk) {
+			EditText source = (EditText) dialog.findViewById(R.id.dlgText);
+			String str = source.getText().toString();
+			if (str.length() == 0) {
+				str = dialog.getOwnerActivity().getResources().getString(R.string.NOT_TEXT);
+			}
+			dest.setText(str);
 		}
 		dialog.dismiss();
 	}

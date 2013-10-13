@@ -3,54 +3,8 @@
                 android:orientation="vertical"
                 style="@style/layout_common_style">
 
-    <RelativeLayout android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:padding="10dip"
-                    android:layout_alignParentTop="true">
-
-        <ImageView android:id="@+id/kotik"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_alignParentTop="true"
-                   android:layout_centerVertical="true"
-                   android:src="@drawable/kotik"/>
-
-        <Button android:id="@+id/mainBtn1"
-                android:layout_toRightOf="@id/kotik"
-                android:layout_alignTop="@id/kotik"
-                android:text="Button1"
-                style="@style/mainpage_button"/>
-        <Button android:id="@+id/mainBtn2"
-                android:layout_toRightOf="@id/kotik"
-                android:layout_below="@id/mainBtn1"
-                style="@style/mainpage_button"
-                android:text="Button2"/>
-
-        <TextView android:id="@+id/my_text1"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_below="@id/mainBtn2"
-                  android:textSize="11dip"
-                  android:textColor="@android:color/black"
-                  android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                />
-
-        <Button android:id="@+id/mainBtnDlg"
-                android:layout_below="@id/my_text1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dialog"
-                android:textColor="@android:color/black"
-                />
-        <EditText android:id="@+id/mainEditText"
-                  android:layout_height="wrap_content"
-                  android:layout_width="match_parent"
-                  android:layout_below="@id/mainBtnDlg"
-                  android:textColor="@android:color/black"
-                />
-    </RelativeLayout>
-
     <LinearLayout android:layout_alignParentBottom="true"
+                  android:id="@+id/mainMenu"
                   android:layout_height="wrap_content"
                   android:layout_width="match_parent"
                   android:orientation="horizontal">
@@ -72,6 +26,60 @@
                 android:src="@drawable/mail"
                 style="@style/main_route_btn"/>
     </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_above="@id/mainMenu" android:fillViewport="true">
+
+    <RelativeLayout android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="10dip">
+
+        <ImageView android:id="@+id/kotik"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:src="@drawable/kotik"/>
+
+        <Button android:id="@+id/mainBtn1"
+                android:layout_toRightOf="@id/kotik"
+                android:layout_alignTop="@id/kotik"
+                android:text="Button1"
+                style="@style/mainpage_button"/>
+        <Button android:id="@+id/mainBtn2"
+                android:layout_toRightOf="@id/kotik"
+                android:layout_below="@id/mainBtn1"
+                style="@style/mainpage_button"
+                android:text="Button2"/>
+
+
+        <TextView android:id="@+id/my_text1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="11dip"
+                  android:layout_below="@id/mainBtn2"
+                  android:textColor="@android:color/black"
+                  android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                />
+
+        <Button android:id="@+id/mainBtnDlg"
+                android:layout_below="@id/my_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialog"
+                android:textColor="@android:color/black"
+                />
+        <EditText android:id="@+id/mainEditText"
+                  android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:layout_below="@id/mainBtnDlg"
+                  android:textColor="@android:color/black"
+                  android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
 
